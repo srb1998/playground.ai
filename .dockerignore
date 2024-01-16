@@ -1,0 +1,19 @@
+#Ignore Node Modules
+node_modules/
+
+# Ignore Python bytecode files
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Ignore git directory and files
+.git
+.gitignore
+
+# Ignore all .env files
+*.env
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
