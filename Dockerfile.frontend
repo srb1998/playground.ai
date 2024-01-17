@@ -1,0 +1,11 @@
+# Stage 1: Build the Next.js frontend Port - 7860
+FROM node:18.18-alpine
+WORKDIR /app/frontend
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+EXPOSE 7860
+
+CMD ["npm", "start"]

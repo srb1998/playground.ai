@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import DocViewer,{DocViewerRenderers} from 'react-doc-viewer';
+// import DocViewer,{DocViewerRenderers} from 'react-doc-viewer';
 import axios from 'axios';
 import Loader from './Loader';
 
@@ -67,7 +67,7 @@ const Hero = () => {
         </button>
       </form>
       <div className="min-h-screen bg-gray-100">
-        {fileRendered && (
+        {/* {fileRendered && (
           <>
             <h2 className="text-xl font-bold mb-2 flex justify-center">
               Document Viewer
@@ -79,7 +79,7 @@ const Hero = () => {
               pluginRenderers={DocViewerRenderers}
             />
           </>
-        )}
+        )} */}
 
         {/* Loading Animation */}
         {loading && (

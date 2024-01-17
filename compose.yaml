@@ -1,23 +1,32 @@
-version: '3.8'
+# version: '3'
+# services:
+#   frontend:
+#     build: 
+#       context: .
+#       dockerfile: Dockerfile.frontend
+#     ports:
+#       - "7860:7860"
+
+#     # depends_on:
+#     #   - backend
+
+#   backend:
+#     build:
+#       context: ./api
+#       dockerfile: Dockerfile.backend
+#     ports:
+#       - "5328:5328"
+
+version: '3'
 services:
   frontend:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile.frontend
     ports:
       - "7860:7860"
-    # develop:
-    #   watch:
-    #     - path: ./package.json
-    #       action: rebuild
-    #     - path: ./next.config.js
-    #       action: rebuild
-    #     - path: .
-    #       target: /frontend
-    #       action: sync
-          
-    # depends_on:
-    #   - backend
+    depends_on:
+      - backend
 
   backend:
     build:
@@ -25,3 +34,4 @@ services:
       dockerfile: Dockerfile.backend
     ports:
       - "5328:5328"
+
