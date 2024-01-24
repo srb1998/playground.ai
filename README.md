@@ -1,8 +1,6 @@
 # Playground.ai
 
-![Youtube Demo](https://www.youtube.com/watch?v=X-hDtimYK1k)
-
-https://github.com/srb1998/playground.ai/assets/80816037/9e9b3b54-b654-4bff-90d6-1718ed906e57
+[![Playground.ai Demo](https://img.youtube.com/vi/X-hDtimYK1k/0.jpg)](https://www.youtube.com/watch?v=X-hDtimYK1k)
 
 ## Overview
 
